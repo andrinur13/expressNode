@@ -1,0 +1,24 @@
+{
+  "name": "expressnode",
+  "version": "1.0.0",
+  "description": "RESTAPI using express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrinur13/expressNode.git"
+  },
+  "keywords": [
+    "restapi",
+    "nodejs",
+    "express"
+  ],
+  "author": "Andri Nur Hidayatulloh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrinur13/expressNode/issues"
+  },
+  "homepage": "https://github.com/andrinur13/expressNode#readme"
+}
