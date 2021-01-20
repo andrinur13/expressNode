@@ -45,3 +45,32 @@ exports.addMahasiswa = function (req, res) {
         }
     })
 }
+
+exports.updateMahasiswa = function (req, res) {
+    let inputan = [req.body.nim, req.body.nama, req.body.prodi, req.body.id];
+
+    let sql = "UPDATE mahasiswa SET nim=?, nama=?, prodi=? WHERE id=?";
+
+    connection.query(sql, inputan, function (err, rows, fields) {
+        if(err) {
+            console.log(err);
+        } else {
+            response.ok("Data berhasil diupdate", res);
+        }
+    })
+}
+
+
+exports.deleteMahasiswa = function (req, res) {
+    let id = req.body.id;
+
+    let sql = "DELETE FROM mahasiswa WHERE id=?";
+
+    connection.query(sql, [id], function (err, rows, fields) {
+        if(err) {
+            console.log(err);
+        } else {
+            response.ok("Data berhasil dihapus", res);
+        }
+    })
+}

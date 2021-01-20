@@ -10,4 +10,9 @@ module.exports = function (app) {
     app.route('/mahasiswaid').get(jsonku.getMahasiswaById);
 
     app.route('/addmahasiswa').post(jsonku.addMahasiswa);
+
+    app.route('/updatemahasiswa').put(jsonku.updateMahasiswa);
+
+    app.route('/deletemahasiswa').delete(jsonku.deleteMahasiswa);
+
 }
