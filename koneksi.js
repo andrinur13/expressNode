@@ -2,7 +2,7 @@ const mysql = require('mysql');
 
 //create connection
 const conn = mysql.createConnection({
-    host: 'futsaloka.my.id',
+    host: 'http://www.futsaloka.my.id',
     user: 'root',
     password: 'root',
     database: 'nodeexpress'
