@@ -2,8 +2,9 @@ const mysql = require('mysql');
 
 //create connection
 const conn = mysql.createConnection({
-    host: 'http://www.futsaloka.my.id',
+    host: 'www.futsaloka.my.id',
     user: 'root',
+    port:3307,
     password: 'root',
     database: 'nodeexpress'
 });
